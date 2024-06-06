@@ -1,0 +1,12 @@
+<h1>Random Numbers</h1>
+<ul>
+  <li *ngFor="let number of randomNumbers">
+    {{ number }} -
+    <span [ngClass]="{'even': number % 2 === 0, 'odd': number % 2 !== 0}">
+      {{ number % 2 === 0 ? 'Even' : 'Odd' }}
+    </span>
+  </li>
+</ul>
+
+<p>Original Sentence: "Hello World"</p>
+<p>Reversed Sentence: {{ 'Hello World' | reverse }}</p>
